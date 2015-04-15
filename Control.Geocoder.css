@@ -138,3 +138,10 @@ ul.leaflet-control-geocoder-alternatives {
 	font-size: 12px;
 	font-weight: lighter;
 }
+
+.leaflet-center {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
