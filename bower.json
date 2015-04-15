@@ -1,11 +1,12 @@
 {
-  "name": "leaflet-control-geocoder",
-  "version": "1.1.0",
-  "homepage": "https://github.com/perliedman/leaflet-control-geocoder",
+  "name": "cliffliang-leaflet-control-geocoder",
+  "version": "1.1.1",
+  "homepage": "https://github.com/cliffliang/leaflet-control-geocoder",
   "authors": [
-    "Per Liedman <per@liedman.net>"
+    "Per Liedman <per@liedman.net>",
+    "Cliff Liang <cliff@gameplanlabs.com>"
   ],
-  "description": "Extendable geocoder with builtin OSM/Nominatim support",
+  "description": "Extendable geocoder with builtin OSM/Nominatim support - modded to search within map extents",
   "main": "Control.Geocoder.js",
   "moduleType": [
     "amd",
