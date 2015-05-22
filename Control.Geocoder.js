@@ -161,7 +161,7 @@
 
         var handler = this.options.handlers[handlerIndex];
         if (value.search(handler.pattern) > -1) {
-          handler.handler(value);
+          handler.handler.call(handler.scope, value);
           return true;
         }
       }
