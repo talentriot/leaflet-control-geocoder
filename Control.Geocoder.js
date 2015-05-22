@@ -23,7 +23,8 @@
       expand: 'click',
       position: 'topright',
       placeholder: 'Search...',
-      errorMessage: 'Nothing found.'
+      errorMessage: 'Nothing found.',
+      handlers: {},
     },
 
     _callbackId: 0,
@@ -139,9 +140,31 @@
     _geocode: function(event) {
       L.DomEvent.preventDefault(event);
 
+      if (this._handleInput(this._input.value)) {
+        this._input.value = '';
+        this._clearResults();
+        return;
+      }
+
       L.DomUtil.addClass(this._container, 'leaflet-control-geocoder-throbber');
       this._clearResults();
       this.options.geocoder.geocode(this._input.value, this._geocodeResult, this);
+
+      return false;
+    },
+
+    _handleInput: function(value) {
+      for (var handlerIndex in this.options.handlers) {
+        if (!this.options.handlers.hasOwnProperty(handlerIndex)) {
+          continue;
+        }
+
+        var handler = this.options.handlers[handlerIndex];
+        if (value.search(handler.pattern) > -1) {
+          handler.handler(value);
+          return true;
+        }
+      }
 
       return false;
     },
