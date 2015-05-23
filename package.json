@@ -1,6 +1,6 @@
 {
   "name": "cliffliang-leaflet-control-geocoder",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Extendable geocoder with builtin OSM/Nominatim support - modded to search within map extents",
   "main": "Control.Geocoder.js",
   "scripts": {
