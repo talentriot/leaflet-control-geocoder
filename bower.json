@@ -1,10 +1,10 @@
 {
-  "name": "cliffliang-leaflet-control-geocoder",
+  "name": "talentriot-leaflet-control-geocoder",
   "version": "1.1.5",
-  "homepage": "https://github.com/cliffliang/leaflet-control-geocoder",
+  "homepage": "https://github.com/talentriot/leaflet-control-geocoder",
   "authors": [
     "Per Liedman <per@liedman.net>",
-    "Cliff Liang <cliff@gameplanlabs.com>"
+    "Cliff Liang <cliffliang@gmail.com>"
   ],
   "description": "Extendable geocoder with builtin OSM/Nominatim support - modded to search within map extents",
   "main": "Control.Geocoder.js",
